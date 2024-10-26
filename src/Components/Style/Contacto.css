@@ -1,0 +1,35 @@
+.tarjeta {
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    position: relative; 
+    padding: 20px; 
+    margin-top: 20px; 
+  }
+  
+  .group-name {
+    position: absolute;
+    top: -10px; 
+    background-color: #f8f9fa; 
+    padding: 0 5px; 
+  }
+  
+  
+  .tarjeta-body {
+    padding: 1rem; 
+  }
+  
+  
+  label {
+    display: block; 
+    margin: 0.5rem 0; 
+  }
+  
+  input[type="date"],
+  select {
+    width: 100%; 
+    padding: 0.5rem; 
+    margin-bottom: 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+  }
+  

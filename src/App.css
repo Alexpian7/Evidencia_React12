@@ -1,0 +1,111 @@
+/* Estilo general para el contenedor raíz */
+#root {
+  max-width: 1280px; /* Limita el ancho total de la aplicación */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 2rem; /* Espaciado alrededor del contenido */
+  text-align: center; /* Centra el texto */
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  min-height: 100vh; /* Asegura que el contenedor ocupe al menos toda la altura de la ventana */
+}
+
+/* Contenedor para el Navbar en la parte superior */
+.navbar-container {
+  flex: 0 0 auto; /* Fijo en la parte superior */
+  width: 100%;
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 1rem 0; /* Espaciado vertical */
+  display: flex; /* Usar flexbox para alinear los elementos */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Estilo para el navbar */
+.navbar {
+  width: 100%;
+  position: fixed; /* Fijo en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Encima de otros elementos */
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+/* Elimina márgenes del contenedor fluido */
+.container-fluid {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo de los enlaces del navbar como "cuadritos" más largos */
+.navbar-nav .nav-link {
+  display: inline-block; /* Muestra los enlaces en línea */
+  padding: 10px 40px; /* Aumenta el padding para hacerlos más largos */
+  margin: 5px; /* Margen entre los enlaces */
+  background-color: #f0f0f0; /* Color de fondo para los enlaces */
+  border-radius: 8px; /* Bordes redondeados */
+  color: #333; /* Color del texto */
+  text-align: center; /* Centra el texto en los enlaces */
+  transition: background-color 0.3s; /* Transición al pasar el cursor */
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+.navbar-nav .nav-link:hover {
+  background-color: #ddd; /* Color de fondo al pasar el cursor */
+  color: #000; /* Color del texto al pasar el cursor */
+}
+
+/* Alinear enlaces para ocupar todo el ancho */
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly; /* Distribución uniforme */
+  align-items: center; /* Alinear elementos en el centro */
+  width: 100%;
+}
+
+/* Añadir margen superior en el contenido de la página para evitar superposición */
+body {
+  padding-top: 70px; /* Ajusta según la altura del navbar */
+}
+
+/* Contenedor del área de contenido */
+.content-container {
+  flex: 1; /* Ocupa el espacio restante */
+  padding: 2rem; /* Espaciado dentro del contenedor */
+  overflow-y: auto; /* Permite el desplazamiento vertical si es necesario */
+  width: 100%; /* Ocupa todo el ancho */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin: 10px 0; /* Espacio entre el contenido y otros elementos */
+  /* No se añade borde aquí, por lo que no tendrá bordes visibles */
+}
+
+/* Contenedor del footer en la parte inferior */
+/* Contenedor del footer en la parte inferior */
+.footer-container {
+  flex: 0 0 auto; /* Fijo en la parte inferior */
+  width: 100%; /* Ocupa todo el ancho */
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 0.1rem; /* Reduce aún más el espaciado vertical */
+  text-align: center; /* Centra el texto */
+  margin-top: 10px; /* Espacio entre el contenido y el footer */
+  border: 1px solid #ccc; /* Borde gris claro */
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño (opcional) */
+}
+
+
+
+/* Estilo para contenido normal (no en tarjetas) */
+.content {
+  padding: 2rem; /* Espaciado interno */
+  margin: 1rem 0; /* Margen para separar secciones */
+  background-color: #fff; /* Color de fondo para el contenido */
+}
+
+/* Texto adicional */
+.read-the-docs {
+  color: #888;
+}
